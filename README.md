@@ -2,7 +2,7 @@
 
 #### By _**Marcus Kyung**_
 
-#### _{Brief description of application}_
+#### _Application takes a user's numerical input and returns an array with specific index values replaced with set string values._
 
 ## Technologies Used
 
@@ -20,6 +20,7 @@ _{This is a detailed description of your application. Give as much detail as nee
 * _Navigate to top level of project directory._
 * _Open index.html file using a browser._
 * _Enter a number in the provided input area._
+* _Enter a name in the provided input area._
 * _Receive text output based on number input._
 
 _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
@@ -32,43 +33,31 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ```Describe: inputToArray()```
 
-  ```Test: "It should take the user's inputted number and count up to it from zero."```
+  ```Test: "It should take the user's inputted number and count up to it from zero in an array."```
   ```Code:```
   ```const userInput = 5;```
   ```inputToArray(userInput);```
-  ```Expected Output: [0,1,2,3,4,5]```
+  ```Expected Output: inputArray = [0,1,2,3,4,5]```
 
 ```Describe: translate()```
 
-  ```Test: "It should identify when a number's inputToArray() array has a 1 in it"```
+  ```Test: "It should identify when a number's inputToArray(userInput) array has a 3 in it"```
   ```Code:```
-  ```const inputToArray(userInput) = 1;```
-  ```translate(inputtoArray(userInput));```
+  ```const inputArray = 5 = [0,1,2,3,4,5];```
+  ```translate(inputArray);```
   ```Expected Output: True```
 
-  ```Describe: translate()```
-
-  ```Test: "It should identify when a number's inputToArray() array has a 2 in it"```
+  ```Test: "It should identify when a number's inputToArray(userInput) array has a 2 in it"```
   ```Code:```
-  ```const inputToArray(userInput) = 2;```
-  ```translate(inputtoArray(userInput));```
+  ```const inputArray = 5 = [0,1,2,3,4,5];```
+  ```translate(inputArray);```
   ```Expected Output: True```
 
-  ```Describe: translate()```
-
-  ```Test: "It should identify when a number's inputToArray() array has a 3 in it"```
+  ```Test: "It should identify when a number's inputToArray(userInput) array has a 1 in it"```
   ```Code:```
-  ```const inputToArray(userInput) = 3;```
-  ```translate(inputtoArray(userInput));```
+  ```const inputArray = 5 = [0,1,2,3,4,5];```
+  ```translate(inputArray);```
   ```Expected Output: True```
-
-```Test: "It should identify when a number's inputToArray() array has a number !== 1,2,3 in it"```
-  ```Code:```
-  ```const inputToArray(userInput) = 1,2,3;```
-  ```translate(inputtoArray(userInput));```
-  ```Expected Output: False```
-
-
 
 ## License
 
