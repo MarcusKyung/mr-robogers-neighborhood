@@ -30,13 +30,13 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Tests
 
-```Describe: firstFunction()```
+```Describe: inputToArray()```
 
-  ```Test: "It should describe the first piece of logic for a function."```
+  ```Test: "It should take the user's inputted number and count up to it from zero."```
   ```Code:```
-  ```const example = "string";```
-  ```firstFunction(example);```
-  ```Expected Output: ["Expected outcome for first piece of logic"]```
+  ```const userInput = 5;```
+  ```inputToArray(userInput);```
+  ```Expected Output: [0,1,2,3,4,5]```
 
 ## License
 

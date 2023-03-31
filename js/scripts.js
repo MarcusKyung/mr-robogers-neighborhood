@@ -1,14 +1,21 @@
 
+//Business Logic
+function inputToArray(userInput){
+  let inputArray = [];
+  for (let index = 0; index <= userInput; index += 1) {
+    inputArray.push(index); 
+  }; 
+  return inputArray;
+};
 
+//UI Logic
 function userInputFunction(event) {
   event.preventDefault();
-  let userInput = document.getElementById("numberInput").value;
-  
-  let arrayResults = [];
-  for (let index = 0; index <= userInput; index += 1) {
-    arrayResults.push(index);  
-  };
-  // console.log(arrayResults); - correctly displays counting up by 1 from 0
+  const userInput = document.getElementById("numberInput").value;
+  const inputArray = inputToArray(userInput)
+  document.getElementById("userInput").innerText = "User Inputted Number: " + userInput;
+  document.getElementById("userInputCount").innerText = "User Inputted Number Counted Out: " + inputArray;
+  // document.getElementById("userInputConverted").innerText = "User Inputted Number Converted: ";
 }
 
 window.addEventListener("load", function() {
