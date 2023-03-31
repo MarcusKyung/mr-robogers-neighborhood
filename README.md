@@ -38,6 +38,32 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
   ```inputToArray(userInput);```
   ```Expected Output: [0,1,2,3,4,5]```
 
+```Describe: translate()```
+
+  ```Test: "It should identify when a number's inputToArray() array has a 1 in it"```
+  ```Code:```
+  ```const inputToArray(userInput) = 5;```
+  ```translate(inputtoArray(userInput));```
+  ```Expected Output: True```
+
+  ```Describe: translate()```
+
+  ```Test: "It should identify when a number's inputToArray() array has a 2 in it"```
+  ```Code:```
+  ```const inputToArray(userInput) = 5;```
+  ```translate(inputtoArray(userInput));```
+  ```Expected Output: True```
+
+  ```Describe: translate()```
+
+  ```Test: "It should identify when a number's inputToArray() array has a 3 in it"```
+  ```Code:```
+  ```const inputToArray(userInput) = 5;```
+  ```translate(inputtoArray(userInput));```
+  ```Expected Output: True```
+
+
+
 ## License
 
 _For questions, comments, or concerns please reach out at Kyungmj@gmail.com_

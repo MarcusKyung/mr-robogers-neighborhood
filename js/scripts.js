@@ -9,9 +9,14 @@ function inputToArray(userInput){
 };
 
 function translate(inputArray){
-  const contains1 = "Beep!"
-  const contains2 = "Boop!"
-  const contains3 = "Won't you be my neighbor?"
+  // const contains1 = "Beep!"
+  // const contains2 = "Boop!"
+  // const contains3 = "Won't you be my neighbor?"
+  inputArray.map(let index = 0; index < array.length; index++) {
+    const element = array[index];
+    if(element.includes("1"))
+    console.log("contains1");
+  };
 };
 
 //UI Logic
