@@ -42,19 +42,19 @@ _This simple JavaScript application takes an inputted number and returns an arra
 
 ```Describe: translate()```
 
-  ```Test: "It should identify when a number's inputToArray(userInput) array has a 3 in it"```
+  ```Test: "It should identify when a number's inputToArray(userInput) array has a 3 in it. Once confirmed an if/then statement can be added"```
   ```Code:```
   ```const inputArray = 5 = [0,1,2,3,4,5];```
   ```translate(inputArray);```
   ```Expected Output: True/console.log(inputArray[i])```
 
-  ```Test: "It should identify when a number's inputToArray(userInput) array has a 2 in it"```
+  ```Test: "It should identify when a number's inputToArray(userInput) array has a 2 in it. Once confirmed an if/then statement can be added"```
   ```Code:```
   ```const inputArray = 5 = [0,1,2,3,4,5];```
   ```translate(inputArray);```
   ```Expected Output: True/console.log(inputArray[i])```
 
-  ```Test: "It should identify when a number's inputToArray(userInput) array has a 1 in it"```
+  ```Test: "It should identify when a number's inputToArray(userInput) array has a 1 in it. Once confirmed an if/then statement can be added"```
   ```Code:```
   ```const inputArray = 5 = [0,1,2,3,4,5];```
   ```translate(inputArray);```
