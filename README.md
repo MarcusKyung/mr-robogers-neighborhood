@@ -28,6 +28,16 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 * _No Known Issues_
 
+## Tests
+
+```Describe: firstFunction()```
+
+  ```Test: "It should describe the first piece of logic for a function."```
+  ```Code:```
+  ```const example = "string";```
+  ```firstFunction(example);```
+  ```Expected Output: ["Expected outcome for first piece of logic"]```
+
 ## License
 
 _For questions, comments, or concerns please reach out at Kyungmj@gmail.com_
