@@ -12,12 +12,28 @@ function translate(inputArray){
   // const contains1 = "Beep!"
   // const contains2 = "Boop!"
   // const contains3 = "Won't you be my neighbor?"
-  console.log(inputArray);
-  for (i = 0; i < inputArray.length; i++)
-    if (inputArray[i].includes(1)) {
-      console.log("true")
-  }
-};
+  // console.log(inputArray);
+  for (i = 0; i < inputArray.length; i++) {
+    if (inputArray[i].toString().includes("1")) {
+    console.log(inputArray[i] + " has a 1");
+    } else if (inputArray[i].toString().includes("2")) {
+      console.log(inputArray[i] + " has a 2");
+    } else if (inputArray[i].toString().includes("3")) {
+      console.log(inputArray[i] + " has a 3");
+    }; 
+  };
+}
+
+
+
+
+
+//   const translatedArray = inputArray.map(function(element, index){
+//     if (inputArray.includes(1)){
+//       console.log(index);
+//     }
+//     });  
+// };
 
 //UI Logic
 function userInputFunction(event) {
