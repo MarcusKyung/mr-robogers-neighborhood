@@ -12,7 +12,7 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This simple JavaScript application takes an inputted number and returns an array with specific numerical values replaced with set strings. This application replaces all array numbers with 3, 2, and 1, with the words "won't you be my neighbor, (inputted name), boop, and beep. This application also offers the user the option to reverse the order of the calculated array.
 
 ## Setup/Installation Requirements
 
@@ -21,13 +21,14 @@ _{This is a detailed description of your application. Give as much detail as nee
 * _Open index.html file using a browser._
 * _Enter a number in the provided input area._
 * _Enter a name in the provided input area._
+* _Select the reverse count radio button in order to reverse the count of array elements._
+* _Press Get Results._
 * _Receive text output based on number input._
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
 ## Known Bugs
 
-* _No Known Issues_
+* _Missing spacing for non-translated index values when printed to webpage_
 
 ## Tests
 
@@ -45,19 +46,19 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
   ```Code:```
   ```const inputArray = 5 = [0,1,2,3,4,5];```
   ```translate(inputArray);```
-  ```Expected Output: True```
+  ```Expected Output: True/console.log(inputArray[i])```
 
   ```Test: "It should identify when a number's inputToArray(userInput) array has a 2 in it"```
   ```Code:```
   ```const inputArray = 5 = [0,1,2,3,4,5];```
   ```translate(inputArray);```
-  ```Expected Output: True```
+  ```Expected Output: True/console.log(inputArray[i])```
 
   ```Test: "It should identify when a number's inputToArray(userInput) array has a 1 in it"```
   ```Code:```
   ```const inputArray = 5 = [0,1,2,3,4,5];```
   ```translate(inputArray);```
-  ```Expected Output: True```
+  ```Expected Output: True/console.log(inputArray[i])```
 
 ## License
 

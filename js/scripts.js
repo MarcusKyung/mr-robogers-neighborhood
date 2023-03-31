@@ -15,10 +15,10 @@ function inputToArray(userInput, reverse){
   
 };
 
-function translate(inputArray){
+function translate(inputArray, userName){
   const contains1 = " Beep!"
   const contains2 = " Boop!"
-  const contains3 = " Won't you be my neighbor, ";
+  const contains3 = " Won't you be my neighbor, " + userName;
   for (i = 0; i < inputArray.length; i++) {
     if (inputArray[i].toString().includes("3")) {
       inputArray[i] = contains3;
@@ -34,7 +34,6 @@ function translate(inputArray){
   return inputArray;
 }
 
-
 //UI Logic
 function userInputFunction(event) {
   event.preventDefault();
@@ -43,7 +42,7 @@ function userInputFunction(event) {
   const reverse = document.getElementById("reverse").checked;
   console.log(userName);
   const inputArray = inputToArray(userInput, reverse);
-  const convertedValue = translate(inputArray);
+  const convertedValue = translate(inputArray, userName);
   document.getElementById("userInput").innerText = "User Inputted Number: " + userInput;
   document.getElementById("userInputCount").innerText = "User Input Number Translated: " + convertedValue;
 }

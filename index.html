@@ -2,24 +2,33 @@
 <html lang="en-US">
 <head>
   <title>Mr. Roboger's Neighborhood</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
 </head>
 <body>
-    <h2>Mr. Roboger's Neighborhood</h2>
-    <form id="rN-Form-Input">
-        <p>Name and Number Form:</p>
-        <label>User Number Input:</label>
-        <input type="text" id="numberInput" name="numberInput" min="0">
+  <div class="container text-center">
+    <div class ="row align-items-start">
+      <div class ="col">
+        <h2>Mr. Roboger's Neighborhood</h2>
+        <form id="rN-Form-Input">
+          <p>Name and Number Form:</p>
+          <label>User Number Input:</label>
+          <input type="text" id="numberInput" name="numberInput" min="0">
+          <br>
+          <label>User Name Input:</label>
+          <input type="text" id="nameInput" name="nameInput">
+          <br>
+          <button type="submit" class="btn btn-primary">Get Results</button>
+          <input type="radio" id="reverse" name="reverseCount" value="Yes">
+          <label for="reverseCount">Reverse Count</label>
+        </form>
         <br>
-        <label>User Name Input:</label>
-        <input type="text" id="nameInput" name="nameInput">
-        <button type="submit">Get Results</button>
-        <input type="radio" id="reverse" name="reverseCount" value="Yes">
-        <label for="reverseCount">Reverse Count</label>
-      </form>
-    <h2>Ouputs:</h2>
-    <p id="userInput">User Inputted Number</p>
-    <p id="userInputCount">User Input Number Translated</p>
+        <h2>Ouputs:</h2>
+        <p id="userInput"><b>User Inputted Number: </b></p>
+        <p id="userInputCount"><b>User Input Number Translated: </b></p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
