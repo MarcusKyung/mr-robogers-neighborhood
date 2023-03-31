@@ -28,7 +28,7 @@ _This simple JavaScript application takes an inputted number and returns an arra
 
 ## Known Bugs
 
-* _Missing spacing for non-translated index values when printed to webpage_
+* _No known bugs_
 
 ## Tests
 

@@ -27,8 +27,7 @@ function translate(inputArray, userName){
     } else if (inputArray[i].toString().includes("1")) {
       inputArray[i] = contains1;
     } else {
-      inputArray[i] = inputArray[i];
-
+      inputArray[i] = inputArray[i].toString() + " ";
     }; 
   }; 
   return inputArray;
