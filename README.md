@@ -42,7 +42,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
   ```Test: "It should identify when a number's inputToArray() array has a 1 in it"```
   ```Code:```
-  ```const inputToArray(userInput) = 5;```
+  ```const inputToArray(userInput) = 1;```
   ```translate(inputtoArray(userInput));```
   ```Expected Output: True```
 
@@ -50,7 +50,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
   ```Test: "It should identify when a number's inputToArray() array has a 2 in it"```
   ```Code:```
-  ```const inputToArray(userInput) = 5;```
+  ```const inputToArray(userInput) = 2;```
   ```translate(inputtoArray(userInput));```
   ```Expected Output: True```
 
@@ -58,9 +58,15 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
   ```Test: "It should identify when a number's inputToArray() array has a 3 in it"```
   ```Code:```
-  ```const inputToArray(userInput) = 5;```
+  ```const inputToArray(userInput) = 3;```
   ```translate(inputtoArray(userInput));```
   ```Expected Output: True```
+
+```Test: "It should identify when a number's inputToArray() array has a number !== 1,2,3 in it"```
+  ```Code:```
+  ```const inputToArray(userInput) = 1,2,3;```
+  ```translate(inputtoArray(userInput));```
+  ```Expected Output: False```
 
 
 

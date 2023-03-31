@@ -9,31 +9,31 @@ function inputToArray(userInput){
 };
 
 function translate(inputArray){
-  // const contains1 = "Beep!"
-  // const contains2 = "Boop!"
-  // const contains3 = "Won't you be my neighbor?"
-  // console.log(inputArray);
+  const contains1 = "Beep!"
+  const contains2 = "Boop!"
+  const contains3 = "Won't you be my neighbor?"
   for (i = 0; i < inputArray.length; i++) {
     if (inputArray[i].toString().includes("1")) {
-    console.log(inputArray[i] + " has a 1");
+      console.log(inputArray[i] + " has a 1");
+      console.log(inputArray[i] = contains1);
+      inputArray[i] = contains1;
+
     } else if (inputArray[i].toString().includes("2")) {
       console.log(inputArray[i] + " has a 2");
+      console.log(inputArray[i] = contains2);
+      inputArray[i] = contains2;
+
     } else if (inputArray[i].toString().includes("3")) {
       console.log(inputArray[i] + " has a 3");
-    }; 
+      console.log(inputArray[i] = contains3);
+      inputArray[i] = contains3;
+
+    } else {
+      inputArray[i];
+      console.log(inputArray[i]);
+    };
   };
 }
-
-
-
-
-
-//   const translatedArray = inputArray.map(function(element, index){
-//     if (inputArray.includes(1)){
-//       console.log(index);
-//     }
-//     });  
-// };
 
 //UI Logic
 function userInputFunction(event) {
@@ -42,8 +42,7 @@ function userInputFunction(event) {
   const inputArray = inputToArray(userInput);
   const convertedValue = translate(inputArray);
   document.getElementById("userInput").innerText = "User Inputted Number: " + userInput;
-  document.getElementById("userInputCount").innerText = "User Inputted Number Counted Out: " + inputArray;
-  // document.getElementById("userInputConverted").innerText = "User Inputted Number Converted: " + convertedValue;
+  document.getElementById("userInputCount").innerText = "User Input Number Translated: " + inputArray;
 }
 
 window.addEventListener("load", function() {
