@@ -1,10 +1,18 @@
 //Business Logic
-function inputToArray(userInput){
+function inputToArray(userInput, reverse){
   let inputArray = [];
-  for (let index = 0; index <= userInput; index += 1) {
-    inputArray.push(index); 
-  }; 
-  return inputArray;
+  if (reverse === true){
+    for (let index = 0; index <= userInput; index += 1) {
+      inputArray.push(index);
+    }; 
+    return inputArray.reverse();
+  } else {
+    for (let index = 0; index <= userInput; index += 1) {
+      inputArray.push(index); 
+    }; 
+    return inputArray;
+  }
+  
 };
 
 function translate(inputArray){
@@ -14,17 +22,16 @@ function translate(inputArray){
   for (i = 0; i < inputArray.length; i++) {
     if (inputArray[i].toString().includes("3")) {
       inputArray[i] = contains3;
-
     } else if (inputArray[i].toString().includes("2")) {
       inputArray[i] = contains2;
-
     } else if (inputArray[i].toString().includes("1")) {
       inputArray[i] = contains1;
-
     } else {
-      inputArray[i + ""];
-    }; return inputArray;
+      inputArray[i] = inputArray[i];
+
+    }; 
   }; 
+  return inputArray;
 }
 
 
@@ -32,12 +39,13 @@ function translate(inputArray){
 function userInputFunction(event) {
   event.preventDefault();
   const userInput = document.getElementById("numberInput").value;
-  // const userName = document.getElementById("nameInput").value;
-  const inputArray = inputToArray(userInput);
+  const userName = document.getElementById("nameInput").value;
+  const reverse = document.getElementById("reverse").checked;
+  console.log(userName);
+  const inputArray = inputToArray(userInput, reverse);
   const convertedValue = translate(inputArray);
   document.getElementById("userInput").innerText = "User Inputted Number: " + userInput;
-  document.getElementById("userInputCount").innerText = "User Input Number Translated: " + inputArray;
-  console.log(convertedValue);
+  document.getElementById("userInputCount").innerText = "User Input Number Translated: " + convertedValue;
 }
 
 window.addEventListener("load", function() {
