@@ -4,22 +4,22 @@ function inputToArray(userInput, reverse){
   if (reverse === true){
     for (let index = 0; index <= userInput; index += 1) {
       inputArray.push(index);
-    }; 
+    } 
     return inputArray.reverse();
   } else {
     for (let index = 0; index <= userInput; index += 1) {
       inputArray.push(index); 
-    }; 
+    } 
     return inputArray;
   }
   
-};
+}
 
 function translate(inputArray, userName){
-  const contains1 = " Beep!"
-  const contains2 = " Boop!"
+  const contains1 = " Beep!";
+  const contains2 = " Boop!";
   const contains3 = " Won't you be my neighbor, " + userName;
-  for (i = 0; i < inputArray.length; i++) {
+  for (let i = 0; i < inputArray.length; i++) {
     if (inputArray[i].toString().includes("3")) {
       inputArray[i] = contains3;
     } else if (inputArray[i].toString().includes("2")) {
@@ -28,8 +28,8 @@ function translate(inputArray, userName){
       inputArray[i] = contains1;
     } else {
       inputArray[i] = inputArray[i].toString() + " ";
-    }; 
-  }; 
+    } 
+  } 
   return inputArray;
 }
 
