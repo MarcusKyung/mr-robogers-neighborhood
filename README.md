@@ -36,29 +36,47 @@ _This simple JavaScript application takes an inputted number and returns an arra
 
   ```Test: "It should take the user's inputted number and count up to it from zero in an array."```
   ```Code:```
-  ```const userInput = 5;```
-  ```inputToArray(userInput);```
-  ```Expected Output: inputArray = [0,1,2,3,4,5]```
+  ```const userInput = 5```
+  ```const reverse = checked```
+  ```inputToArray(userInput, reverse)```
+  ```Expected Output: inputArray = [1,2,3,4,5]```
+
+  ```Test: "It should return a reversed array of numbers from 0 if the reverse argument is true."```
+  ```Code:```
+  ```const userInput = 5```
+  ```const reverse = checked```
+  ```inputToArray(userInput, reverse)```
+  ```Expected Output: inputArray = [5,4,3,2,1]```
+
+  ```Test: "It should return an empty array if the userInput is a negative number"```
+  ```Code:```
+  ```const userInput = -5```
+  ```const reverse = checked```
+  ```inputToArray(userInput, reverse)```
+  ```Expected Output: inputArray = []```
 
 ```Describe: translate()```
 
   ```Test: "It should replace any number containing a 3 in the user array with 'Won't you be my neighbor?'```
   ```Code:```
-  ```const inputArray = 5 = [0,1,2,3,4,5];```
-  ```translate(inputArray);```
-  ```Expected Output: ['0 ', ' 1', ' 2', ' Won't you be my neighbor, ', ' 4', ' 5']```
+  ```const inputArray = 5```
+  ```const userName = name```
+  ```translate(inputArray, userName);```
+  ```Expected Output: ['0 ', ' 1', ' 2', ' Won't you be my neighbor userName ', ' 4', ' 5']```
 
   ```Test: "It should replace any number containing a 2 in the user array with 'Boop!'```
   ```Code:```
-  ```const inputArray = 5 = [0,1,2,3,4,5];```
-  ```translate(inputArray);```
+   ```const inputArray = 5```
+  ```const userName = name```
+  ```translate(inputArray, userName);```
   ```Expected Output: ['0 ', ' 1', ' Boop!', ' 3', ' 4', ' 5']```
 
   ```Test: "It should replace any number containing a 1 in the user array with 'Beep!'```
   ```Code:```
-  ```const inputArray = 5 = [0,1,2,3,4,5];```
-  ```translate(inputArray);```
-  ```Expected Output: ['0 ', ' 1', ' 2', ' 3', ' 4', ' 5']```
+  ```const inputArray = 5```
+  ```const userName = name```
+  ```translate(inputArray, userName);```
+  ```Expected Output: ['0 ', ' Beep!', ' 2', ' 3', ' 4', ' 5']```
 
 ## License
 

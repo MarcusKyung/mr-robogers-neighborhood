@@ -39,7 +39,6 @@ function userInputFunction(event) {
   const userInput = document.getElementById("numberInput").value;
   const userName = document.getElementById("nameInput").value;
   const reverse = document.getElementById("reverse").checked;
-  console.log(userName);
   const inputArray = inputToArray(userInput, reverse);
   const convertedValue = translate(inputArray, userName);
   document.getElementById("userInput").innerText = "User Inputted Number: " + userInput;
