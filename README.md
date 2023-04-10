@@ -42,23 +42,23 @@ _This simple JavaScript application takes an inputted number and returns an arra
 
 ```Describe: translate()```
 
-  ```Test: "It should identify when a number's inputToArray(userInput) array has a 3 in it. Once confirmed an if/then statement can be added"```
+  ```Test: "It should replace any number containing a 3 in the user array with 'Won't you be my neighbor?'```
   ```Code:```
   ```const inputArray = 5 = [0,1,2,3,4,5];```
   ```translate(inputArray);```
-  ```Expected Output: True/console.log(inputArray[i])```
+  ```Expected Output: ['0 ', ' 1', ' 2', ' Won't you be my neighbor, ', ' 4', ' 5']```
 
-  ```Test: "It should identify when a number's inputToArray(userInput) array has a 2 in it. Once confirmed an if/then statement can be added"```
+  ```Test: "It should replace any number containing a 2 in the user array with 'Boop!'```
   ```Code:```
   ```const inputArray = 5 = [0,1,2,3,4,5];```
   ```translate(inputArray);```
-  ```Expected Output: True/console.log(inputArray[i])```
+  ```Expected Output: ['0 ', ' 1', ' Boop!', ' 3', ' 4', ' 5']```
 
-  ```Test: "It should identify when a number's inputToArray(userInput) array has a 1 in it. Once confirmed an if/then statement can be added"```
+  ```Test: "It should replace any number containing a 1 in the user array with 'Beep!'```
   ```Code:```
   ```const inputArray = 5 = [0,1,2,3,4,5];```
   ```translate(inputArray);```
-  ```Expected Output: True/console.log(inputArray[i])```
+  ```Expected Output: ['0 ', ' 1', ' 2', ' 3', ' 4', ' 5']```
 
 ## License
 
