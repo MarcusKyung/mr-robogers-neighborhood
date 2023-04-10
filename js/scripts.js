@@ -18,7 +18,7 @@ function inputToArray(userInput, reverse){
 function translate(inputArray, userName){
   const contains1 = " Beep!";
   const contains2 = " Boop!";
-  const contains3 = " Won't you be my neighbor, " + userName;
+  const contains3 = " Won't you be my neighbor " + userName;
   for (let i = 0; i < inputArray.length; i++) {
     if (inputArray[i].toString().includes("3")) {
       inputArray[i] = contains3;
